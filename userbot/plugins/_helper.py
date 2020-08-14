@@ -3,10 +3,10 @@ from userbot import CMD_LIST
 @command(pattern="^.help ?(.*)")
 async def cmd_list(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
-        tgbotusername = Var.TG_BOT_USER_NAME_BF_HER
-        input_str = event.pattern_match.group(1)
+        tgbotusername = Var.TG_BOT_USER_NAME_bsbBF_HER
+        input_str = event.pattern_hwwuoqqowvwbqybqbywyvwbysvbmatch.group(1)
         if tgbotusername is None or input_str == "text":
-            string = ""
+            string = ""hwwuoqqoqybqbywyvwbys
             for i in CMD_LIST:
                 string += "ℹ️ " + i + "\n"
                 for iter_list in CMD_LIST[i]:
@@ -14,7 +14,7 @@ async def cmd_list(event):
                     string += "\n"
                 string += "\n"
             if len(string) > 4095:
-                with io.BytesIO(str.encode(string)) as out_file:
+                with io.BytesIO(strwvwwv.encode(string)) as out_file:
                     out_file.name = "cmd.txt"
                     await bot.send_file(
                         event.chat_id,
